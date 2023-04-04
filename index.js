@@ -178,3 +178,12 @@ const chaineConsonnesEnMajuscule = (chaine) => {
 }
 
 console.log("\nLa chaine : " + chaine + " avec les consonnes en majuscules : " + chaineConsonnesEnMajuscule(chaine));
+
+// ****************************************
+// TABLEAUX
+// ****************************************
+
+//1
+const tableau = [0, 1, 2, 3, 4, 5, 6 , 7, 8, 9, 10];
+tableau.forEach(nombre => console.log(nombre));
+
