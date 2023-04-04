@@ -19,9 +19,9 @@ const plusGrandNombre = (tab) => {
     }
 }
 const tab = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log("plus grand nombre du tableau " + tab + " : " + plusGrandNombre(tab));
+console.log("\nPlus grand nombre du tableau " + tab + " : " + plusGrandNombre(tab));
 
-let chaineSansVoyelles = (chaine) => {
+const chaineSansVoyelles = (chaine) => {
     const voyelles = ['a', 'e', 'y', 'u', 'i', 'o'];
     let nouvelleChaine = "";
     [...chaine].forEach(lettre => {
@@ -33,4 +33,9 @@ let chaineSansVoyelles = (chaine) => {
 }
 
 const chaine = "Coucou les copains";
-console.log("Chaine avec voyelles : " + chaine + "Chaine sans voyelles : " + chaineSansVoyelles(chaine));
+console.log("\nChaine avec voyelles : " + chaine + "\nChaine sans voyelles : " + chaineSansVoyelles(chaine));
+
+const chainesTriees = (tabChaines) => tabChaines.sort();
+
+const tabChaines = ["Javascript", "Classique", "JePreferePython"];
+console.log("\nChaines pas triées : " + tabChaines + "\nChaines triées : " + chainesTriees(tabChaines));
