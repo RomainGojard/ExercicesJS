@@ -125,3 +125,13 @@ player3.name = "XxSasukexX";
 player3.age = 12;
 console.log("\nAffichage de l'attribut âge pour les joueurs : " + player1.playertoString() + "\t" + player2.playertoString() + "\t" + player3.playertoString() + "\n" + tableauPropriete([player1, player2, player3], "name"));
 
+const comparerNombreDecroissant = (a, b) => {
+    return b - a;
+}
+
+const nombresParOrdreDecroissant = (tabNombres) => {
+    return tabNombres.sort(comparerNombreDecroissant);
+}
+
+const tabNombres = [200, 10, 5, 790, 56];
+console.log("\nTri du tableau : " + tabNombres + " par ordre décroissant : " + nombresParOrdreDecroissant(tabNombres));
