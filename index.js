@@ -164,4 +164,17 @@ const nombreDeVoyelles = (chaine) => {
 
 console.log("\nLa chaine : " + chaine + " contient " + nombreDeVoyelles(chaine) + " voyelles");
 
+const chaineConsonnesEnMajuscule = (chaine) => {
+    const voyelles = ['a', 'e', 'y', 'u', 'i', 'o'];
+    let nouvelleChaine = "";
+    [...chaine].forEach(lettre => {
+        if (!voyelles.includes(lettre)) {
+            nouvelleChaine += lettre.toUpperCase();
+        }else {
+            nouvelleChaine += lettre;
+        }
+    })
+    return nouvelleChaine;
+}
 
+console.log("\nLa chaine : " + chaine + " avec les consonnes en majuscules : " + chaineConsonnesEnMajuscule(chaine));
