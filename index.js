@@ -135,3 +135,33 @@ const nombresParOrdreDecroissant = (tabNombres) => {
 
 const tabNombres = [200, 10, 5, 790, 56];
 console.log("\nTri du tableau : " + tabNombres + " par ordre décroissant : " + nombresParOrdreDecroissant(tabNombres));
+
+const chaineVoyellesEnMajuscule = (chaine) => {
+    const voyelles = ['a', 'e', 'y', 'u', 'i', 'o'];
+    let nouvelleChaine = "";
+    [...chaine].forEach(lettre => {
+        if (voyelles.includes(lettre)) {
+            nouvelleChaine += lettre.toUpperCase();
+        }else {
+            nouvelleChaine += lettre;
+        }
+    })
+    return nouvelleChaine;
+}
+
+console.log("\nLa chaine : " + chaine + " avec les voyelles en majuscules : " + chaineVoyellesEnMajuscule(chaine));
+
+const nombreDeVoyelles = (chaine) => {
+    const voyelles = ['a', 'e', 'y', 'u', 'i', 'o'];
+    let nbVoyelles = 0;
+    [...chaine].forEach(lettre => {
+        if (voyelles.includes(lettre)) {
+            nbVoyelles ++;
+        }
+    })
+    return nbVoyelles;
+}
+
+console.log("\nLa chaine : " + chaine + " contient " + nombreDeVoyelles(chaine) + " voyelles");
+
+
